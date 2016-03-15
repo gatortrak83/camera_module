@@ -1,0 +1,44 @@
+#################
+## Altium
+#################
+ 
+# backup and output directories
+History/
+Project Logs for */
+logs/
+Project Outputs for */
+output/
+ 
+# web reports
+*.PcbDoc.htm
+*.SchDoc.htm
+*.PcbLib.htm
+*.SchLib.htm
+ 
+# temporary files
+*.~SchDoc
+*.~PcbDoc
+*.~SchLib
+*.~PcbLib
+*.PrjPcbStructure
+ 
+# export log
+*.Rep
+ 
+# library editor reports
+*.REP
+*.CMP
+*.ERR
+ 
+# viewport settings
+*.PcbDocPreview
+*.SchDocPreview
+ 
+ 
+############
+## Windows
+############
+ 
+# Windows image file caches
+Thumbs.db
+ 
