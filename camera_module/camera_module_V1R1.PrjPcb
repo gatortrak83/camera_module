@@ -208,7 +208,116 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=LJMIRTMS
 
+[Document11]
+DocumentPath=camera_module.OutJob
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
+
 [GeneratedDocument1]
+DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.DRR
+DItemRevisionGUID=
+
+[GeneratedDocument2]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.EXTREP
+DItemRevisionGUID=
+
+[GeneratedDocument3]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBL
+DItemRevisionGUID=
+
+[GeneratedDocument4]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBO
+DItemRevisionGUID=
+
+[GeneratedDocument5]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBP
+DItemRevisionGUID=
+
+[GeneratedDocument6]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBS
+DItemRevisionGUID=
+
+[GeneratedDocument7]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GKO
+DItemRevisionGUID=
+
+[GeneratedDocument8]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM1
+DItemRevisionGUID=
+
+[GeneratedDocument9]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM5
+DItemRevisionGUID=
+
+[GeneratedDocument10]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM13
+DItemRevisionGUID=
+
+[GeneratedDocument11]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM15
+DItemRevisionGUID=
+
+[GeneratedDocument12]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GP1
+DItemRevisionGUID=
+
+[GeneratedDocument13]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GP2
+DItemRevisionGUID=
+
+[GeneratedDocument14]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GPB
+DItemRevisionGUID=
+
+[GeneratedDocument15]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GPT
+DItemRevisionGUID=
+
+[GeneratedDocument16]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTL
+DItemRevisionGUID=
+
+[GeneratedDocument17]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTO
+DItemRevisionGUID=
+
+[GeneratedDocument18]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTP
+DItemRevisionGUID=
+
+[GeneratedDocument19]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTS
+DItemRevisionGUID=
+
+[GeneratedDocument20]
+DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.LDP
+DItemRevisionGUID=
+
+[GeneratedDocument21]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.REP
+DItemRevisionGUID=
+
+[GeneratedDocument22]
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.RUL
+DItemRevisionGUID=
+
+[GeneratedDocument23]
+DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument24]
 DocumentPath=Project Outputs for camera_module_V1R1\Design Rule Check - camera_module_PCB_V1R1.html
 DItemRevisionGUID=
 
