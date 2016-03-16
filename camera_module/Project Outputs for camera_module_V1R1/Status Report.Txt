@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [camera_module_PCB_V1R1.PcbDoc]
+   Generated File[camera_module_PCB_V1R1.TXT]
+   Generated File[camera_module_PCB_V1R1.LDP]
+   Generated File[camera_module_PCB_V1R1.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:26:59 AM On 3/16/2016
