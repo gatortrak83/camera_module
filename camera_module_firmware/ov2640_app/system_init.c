@@ -37,6 +37,18 @@ void clock_init(void){
 
 	uint8_t returnValue = 0;
 
+	//Comment out for MSP430 clock for OV2940
+
+
+	GPIO_setAsOutputPin(
+		GPIO_PORT_P3,
+		GPIO_PIN5);
+
+	GPIO_setOutputLowOnPin(
+		GPIO_PORT_P3,
+		GPIO_PIN5);
+
+
 	//Comment out clock peripheral output setup
 	//for oscillator usage
 /*
