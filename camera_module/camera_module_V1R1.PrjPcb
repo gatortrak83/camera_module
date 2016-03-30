@@ -87,26 +87,9 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=VBSNJTGS
+DocumentUniqueId=THRQNHMV
 
 [Document4]
-DocumentPath=[05] - MSP430F5529.SchDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=6
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=SGKJMJGS
-
-[Document5]
 DocumentPath=[02] - BLOCK DIAGRAM.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -121,9 +104,9 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=MIWLRSJI
+DocumentUniqueId=WGFQYJGD
 
-[Document6]
+[Document5]
 DocumentPath=[03] - OV2640.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -140,7 +123,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=JJAJHBDQ
 
-[Document7]
+[Document6]
 DocumentPath=[04] - Connectors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -156,6 +139,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=OUEXCCDK
+
+[Document7]
+DocumentPath=[05] - MSP430F5529.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=6
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=0
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=SGKJMJGS
 
 [Document8]
 DocumentPath=[XX] - DOC REVISION HISTORY.SchDoc
@@ -226,94 +226,98 @@ GenerateClassCluster=0
 DocumentUniqueId=
 
 [GeneratedDocument1]
-DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.DRR
+DocumentPath=Project Outputs for camera_module_V1R1\BOM\Bill of Materials-camera_module_V1R1.xlsx
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.EXTREP
+DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBL
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBO
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBP
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBS
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GKO
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM1
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM5
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM13
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM5
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM15
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GP1
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GP2
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GPB
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GP2
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GPT
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTL
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTO
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTP
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTS
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.LDP
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.RUL
+DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.TXT
+DocumentPath=Project Outputs for camera_module_V1R1\Gerber\camera_module_PCB_V1R1.RUL
 DItemRevisionGUID=
 
 [GeneratedDocument23]
+DocumentPath=Project Outputs for camera_module_V1R1\NC Drill\camera_module_PCB_V1R1.TXT
+DItemRevisionGUID=
+
+[GeneratedDocument24]
 DocumentPath=Project Outputs for camera_module_V1R1\Design Rule Check - camera_module_PCB_V1R1.html
 DItemRevisionGUID=
 
@@ -342,7 +346,7 @@ OutputJobsCount=0
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=PCADNetlist
 OutputName1=PCAD Netlist
@@ -378,7 +382,7 @@ OutputDefault6=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -521,7 +525,7 @@ PageOptions19=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -543,7 +547,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CompositeDrill
 OutputName1=Composite Drill Drawing
@@ -615,7 +619,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -652,7 +656,7 @@ OutputDefault6=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -832,7 +836,7 @@ PageOptions29=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Design Rules Check
 OutputName1=Design Rules Check
@@ -871,7 +875,7 @@ OutputDefault6=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=HP LaserJet P2015 PCL6
+TargetPrinter=Microsoft Print to PDF
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB

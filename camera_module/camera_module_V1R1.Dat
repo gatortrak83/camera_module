@@ -1,0 +1,38 @@
+﻿Field=#~Integer~#~50|Field=Comment~String~Comment~100|Field=Description~String~Description~100|Field=Designator~String~Designator~100|Field=Manufacturer~String~Manufacturer~100|Field=Manufacturer Part Number~String~Manufacturer Part Number~100|Field=Quantity~Integer~Quantity~100|ReportField=Currency~<none>|ReportField=ProductionQuantity~1|ReportField=ProjectFileName~camera_module_V1R1.PrjPcb|ReportField=ProjectFullPath~C:\Users\longs\git\camera_module\camera_module\camera_module_V1R1.PrjPcb|ReportField=Title~Bill of Materials For Project [camera_module_V1R1.PrjPcb] (No PCB Document Selected)|ReportField=TotalQuantity~119|ReportField=ReportTime~7:41:37 PM|ReportField=ReportDate~3/20/2016|ReportField=ReportDateTime~3/20/2016 7:41:37 PM|ReportField=OutputName~Bill of Materials|ReportField=OutputType~BOM_PartType|ReportField=GeneratorName~BOM|ReportField=GeneratorDescription~Bill of Materials|ReportField=VariantName~None|ReportField=Company~(c) 2013 FEDEVEL www.fedevel.com|ReportField=Project~Altium Template|ReportField=VersionRevision~V1I1|ReportField=Address1~|ReportField=Address2~|ReportField=Address3~|ReportField=Address4~|ReportField=Application_BuildNumber~|ReportField=ApprovedBy~|ReportField=Author~|ReportField=CheckedBy~|ReportField=CompanyName~KDS|ReportField=ConfigurationParameters~|ReportField=ConfiguratorName~|ReportField=CurrentDate~3/20/2016|ReportField=CurrentTime~7:34:24 PM|ReportField=Date~|ReportField=DocumentFullPathAndName~C:\Users\longs\git\camera_module\camera_module\camera_module_Project.SchDoc|ReportField=DocumentName~camera_module_Project.SchDoc|ReportField=DocumentNumber~4|ReportField=DrawnBy~|ReportField=Engineer~|ReportField=ImagePath~|ReportField=IsUserConfigurable~|ReportField=ModifiedDate~3/12/2016|ReportField=Organization~KDS|ReportField=PageSetup~Record=PageOptions:CenterHorizontal=True:CenterVertical=True:PrintScale=1.07:XCorrection=1.00:YCorrection=1.00:PrintKind=1:BorderSize=5000000:LeftOffset=0:BottomOffset=0:Orientation=2:PaperLength=1000:PaperWidth=1000:Scale=100:PaperSource=7:PrintQuality=600:MediaType=1:DitherType=10:PaperKind=A3:PrintScaleMode=1|ReportField=ProjectName~camera_module_V1R1.PrjPcb|ReportField=Revision~V1I1|ReportField=Rule~|ReportField=SheetNumber~4|ReportField=SheetTotal~4|ReportField=Time~|ReportField=Title~|ReportField=VersionControl_RevNumber~|ReportField=DataSourceFileName~camera_module_V1R1.PrjPcb|ReportField=DataSourceFullPath~C:\Users\longs\git\camera_module\camera_module\camera_module_V1R1.PrjPcb
+1|GRM188R71C105KA12D|CAP CER 1UF 16V X7R 0603|C1, C2, C3, C6, C7, C12, C13, C14, C17, C18, C23, C24, C25, C28, C29, C38, C39|Murata Electronics North America|GRM188R71C105KA12D|17
+2|GRM21BR61E106KA73L|CAP CER 10UF 25V X5R 0805|C4, C8, C15, C19, C26, C30, C37, C45, C48, C52, C58|Murata Electronics North America|GRM21BR61E106KA73L|11
+3|GRM188R71C104KA01D|CAP CER 0.1UF 16V X7R 0603|C5, C9, C16, C20, C27, C31, C47, C50, C51, C54, C59, C62|Murata Electronics North America|GRM188R71C104KA01D|12
+4|GRM188R71E103KA01D|CAP CER 10000PF 25V X7R 0603|C10, C11, C21, C22, C32, C33, C34, C35, C36|Murata Electronics North America|GRM188R71E103KA01D|9
+5|C1608C0G1H330J080AA|CAP CER 33PF 50V C0G 0603|C40, C65|TDK Corporation|C1608C0G1H330J080AA|2
+6|C1608C0G1H120J080AA|CAP CER 12PF 50V C0G 0603|C41, C42|TDK Corporation|C1608C0G1H120J080AA|2
+7|GRM188R71C224KA01D|CAP CER 0.22UF 16V X7R 0603|C55, C60|Murata Electronics North America|GRM188R71C224KA01D|2
+8|C1608X5R1C474K080AA|CAP CER 0.47UF 16V X5R 0603|C56|TDK Corporation|C1608X5R1C474K080AA|1
+9|GRM188R71C222KA01D|CAP CER 2200PF 16V X7R 0603|C57|Murata Electronics North America|GRM188R71C222KA01D|1
+10|GRM188R60J475KE19D|CAP CER 4.7UF 6.3V X5R 0603|C61|Murata Electronics North America|GRM188R60J475KE19D|1
+11|GRM1885C1H100JA01D|CAP CER 10PF 50V NP0 0603|C63, C64|Murata Electronics North America|GRM1885C1H100JA01D|2
+12|GRM21BR60J476ME15L|CAP CER 47UF 6.3V X5R 0805|C66|Murata Electronics North America|GRM21BR60J476ME15L|1
+13|LB Q39E-N1OO-35-1|LED BLUE DIFFUSED 0603 SMD|D1|OSRAM Opto Semiconductors Inc.|LB Q39E-N1OO-35-1|1
+14|SD103AWS-E3-08|DIODE SCHOTTKY 40V 350MA SOD323|D2|Vishay Semiconductor Diodes Division|SD103AWS-E3-08|1
+15|SMLE12WBC7W1|LED WHITE DIFFUSED 0603 SMD|D3|Rohm Semiconductor|SMLE12WBC7W1|1
+16|SML-D12M8WT86|LED GREEN DIFFUSED 0603 SMD|D4|Rohm Semiconductor|SML-D12M8WT86|1
+17|SML-D12U8WT86|LED RED DIFFUSED 0603 SMD|D5|Rohm Semiconductor|SML-D12U8WT86|1
+18|OV2640 FFC|CONN FFC BOTTOM 24POS 0.50MM R/A|J1, J2, J3|Molex, LLC|0524372433|3
+19|ASP-134604-01|SAMTEC - ASP-134604-01 - Board-To-Board Connector, Vita 57 XMC, ASP Series, Surface Mount, Header, 160, 1.27 mm|J4|SAMTEC|ASP-134604-01|1
+20|2514-6002UB|SHROUDED HEADER 14 POS STRAIGHT|J5|3M|2514-6002UB|1
+21|ZX62-B-5PA(11)|CONN RCPT MICRO USB B SMD R/A|J6|Hirose Electric Co Ltd|ZX62-B-5PA(11)|1
+22|ERJ-3GEY0R00V|RES SMD 0.0OHM JUMPER 1/10W 0603|R1, R2, R5, R6, R9, R10, R13, R14, R15, R16, R17, R18, R19, R24, R26, R28|Panasonic Electronic Components|ERJ-3GEY0R00V|16
+23|Panasonic Electronic Components|RES SMD 47K OHM 1% 1/10W 0603|R3, R25|Panasonic Electronic Components|ERJ-3EKF4702V|2
+24|ERJ-3EKF4700V|RES SMD 470 OHM 1% 1/10W 0603|R4, R7, R8, R27|Panasonic Electronic Components|ERJ-3EKF4700V|4
+25|ERJ-3EKF4701V|RES SMD 4.7K OHM 1% 1/10W 0603|R20, R21, R22, R23|Panasonic Electronic Components|ERJ-3EKF4701V|4
+26|ERJ-3EKF1000V|RES SMD 100 OHM 1% 1/10W 0603|R29|Panasonic Electronic Components|ERJ-3EKF1000V|1
+27|ERJ-3EKF27R0V|RES SMD 27 OHM 1% 1/10W 0603|R30, R32|Panasonic Electronic Components|ERJ-3EKF27R0V|2
+28|ERJ-3EKF1401V|RES SMD 1.4K OHM 1% 1/10W 0603|R31|Panasonic Electronic Components|ERJ-3EKF1401V|1
+29|ERJ-3EKF1004V|RES SMD 1M OHM 1% 1/10W 0603|R33|Panasonic Electronic Components|ERJ-3EKF1004V|1
+30|PTS645SH50SMTR92 LFS|SWITCH TACTILE SPST-NO 0.05A 12V|SW1, SW2, SW3|C&K Components|PTS645SH50SMTR92 LFS|3
+31|TPS71713DCKR|IC REG LDO 1.3V 0.15A SC70-5|U1, U3, U5|Texas Instruments|TPS71713DCKR|3
+32|TPS71728DCKR|IC REG LDO 2.8V 0.15A SC70-5|U2, U4, U6|Texas Instruments|TPS71728DCKR|3
+33|24MHz|OSC XO 24.000MHZ HCMOS TTL SMD|U7, U8, U9|Abracon LLC|ASFL1-24.000MHZ-EC-T|3
+34|MSP430F5529IPNR|IC MCU 16BIT 128KB FLASH 80LQFP|U10|Texas Instruments|MSP430F5529IPNR|1
+35|TPD2E001DRLRG4|TVS DIODE 5.5VWM 100VC SOT5|U11|Texas Instruments|TPD2E001DRLRG4|1
+36|12MHz|CRYSTAL 12.0000MHZ 20PF SMD|X1|ECS Inc.|ECS-120-20-30B-TR|1
+37|32.768kHz|CRYSTAL 32.7680KHZ 9PF SMD|X2|Abracon LLC|ABS07-32.768KHZ-9-T|1

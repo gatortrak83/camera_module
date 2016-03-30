@@ -1,12 +1,14 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : PCB Document [camera_module_PCB_V1R1.PcbDoc]
-   Generated File[camera_module_PCB_V1R1.TXT]
-   Generated File[camera_module_PCB_V1R1.LDP]
-   Generated File[camera_module_PCB_V1R1.DRR]
+Project Outputs Generation Report
+---------------------------------
+Start Output Generation At 7:43:21 PM On 3/20/2016
+
+Output: Bill of Materials
+Type  : BOM
+From  : Variant [[No Variations]] of Project [camera_module_V1R1.PrjPcb]
+   Generated File[Bill of Materials-camera_module_V1R1.xlsx]
 
 
-Files Generated   : 3
+Files Generated   : 1
 Documents Printed : 0
 
-Finished Output Generation At 11:31:15 AM On 3/16/2016
+Finished Output Generation At 7:43:31 PM On 3/20/2016
