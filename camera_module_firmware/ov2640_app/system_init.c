@@ -37,9 +37,10 @@ void clock_init(void){
 
 	uint8_t returnValue = 0;
 
-	//Comment out for MSP430 clock for OV2940
+	//Comment out if not using VCO
+	//Start
 
-
+/*
 	GPIO_setAsOutputPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
@@ -47,11 +48,15 @@ void clock_init(void){
 	GPIO_setOutputLowOnPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
+*/
+
+	//END
 
 
 	//Comment out clock peripheral output setup
-	//for oscillator usage
-/*
+	//for VCO usage
+	//Start
+
     //Output MCLK
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P7,
@@ -66,7 +71,8 @@ void clock_init(void){
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P2,
         GPIO_PIN2);
-*/
+
+    //END
 
     //Port select XT1
     GPIO_setAsPeripheralModuleFunctionInputPin(
@@ -103,6 +109,12 @@ void clock_init(void){
         );
 
 
+    //Select DCO as MCLK source
+    UCS_initClockSignal(
+    	UCS_MCLK,
+		UCS_DCOCLK_SELECT,
+		UCS_CLOCK_DIVIDER_1
+		);
 
     //Select DCO as ACLK source
     UCS_initClockSignal(
