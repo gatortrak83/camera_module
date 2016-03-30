@@ -37,6 +37,9 @@ void clock_init(void){
 
 	uint8_t returnValue = 0;
 
+	//Comment out clock peripheral output setup
+	//for oscillator usage
+/*
     //Output MCLK
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P7,
@@ -51,6 +54,7 @@ void clock_init(void){
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P2,
         GPIO_PIN2);
+*/
 
     //Port select XT1
     GPIO_setAsPeripheralModuleFunctionInputPin(
@@ -86,6 +90,12 @@ void clock_init(void){
         UCS_MCLK_FLLREF_RATIO
         );
 
+
+    //Comment out ACLK and SMCLK set up
+    //for oscillator usage
+
+/*
+
     //Select DCO as ACLK source
     UCS_initClockSignal(
         UCS_ACLK,
@@ -93,12 +103,14 @@ void clock_init(void){
         UCS_CLOCK_DIVIDER_1
         );
 
-    //Select DCO as ACLK source
+    //Select DCO as SMCLK source
     UCS_initClockSignal(
         UCS_SMCLK,
         UCS_DCOCLK_SELECT,
         UCS_CLOCK_DIVIDER_1
         );
+
+*/
 
     // Enable global oscillator fault flag
     SFR_clearInterrupt(SFR_OSCILLATOR_FAULT_INTERRUPT);
