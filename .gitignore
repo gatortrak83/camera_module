@@ -33,6 +33,17 @@ logs/
 *.PcbDocPreview
 *.SchDocPreview
  
+#################
+## Code Composer
+#################
+ 
+Debug/
+.xdchelp
+.config/
+.launches/
+.metadata/
+RemoteSystemsTempFiles/
+
  
 ############
 ## Windows
