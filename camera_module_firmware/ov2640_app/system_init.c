@@ -91,10 +91,6 @@ void clock_init(void){
         );
 
 
-    //Comment out ACLK and SMCLK set up
-    //for oscillator usage
-
-/*
 
     //Select DCO as ACLK source
     UCS_initClockSignal(
@@ -110,7 +106,7 @@ void clock_init(void){
         UCS_CLOCK_DIVIDER_1
         );
 
-*/
+
 
     // Enable global oscillator fault flag
     SFR_clearInterrupt(SFR_OSCILLATOR_FAULT_INTERRUPT);
