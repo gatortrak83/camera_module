@@ -48,8 +48,8 @@ void clock_init(void){
 	GPIO_setOutputLowOnPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
-*/
 
+*/
 	//END
 
 
@@ -73,6 +73,7 @@ void clock_init(void){
         GPIO_PIN2);
 
     //END
+
 
     //Port select XT1
     GPIO_setAsPeripheralModuleFunctionInputPin(

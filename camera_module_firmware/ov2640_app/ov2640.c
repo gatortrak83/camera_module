@@ -99,7 +99,6 @@ void OV2640_SetCameraRegisters(uint8_t usci_num) {
 	}
 
 	i = 0;
-	regs = ov2640_yuyv_regs;
 	while (regs[i][0]) {
 		SCCB_Write(usci_num, regs[i][0], regs[i][1], 2);
 		__delay_cycles(sccb_delay);
