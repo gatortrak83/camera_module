@@ -39,19 +39,17 @@ void clock_init(void){
 
 	//Comment out if not using VCO
 	//Start
-
 /*
 	GPIO_setAsOutputPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
 
-	GPIO_setOutputLowOnPin(
+	GPIO_setOutputHighOnPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
 
-*/
 	//END
-
+*/
 
 	//Comment out clock peripheral output setup
 	//for VCO usage

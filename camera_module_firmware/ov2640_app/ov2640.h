@@ -475,6 +475,7 @@ static const uint8_t ov2640_init_regs[][2] = {
   { 0xe1,   0x77 },
   { 0xdd,   0x7f },
   { CTRL0,  CTRL0_YUV422 | CTRL0_YUV_EN | CTRL0_RGB_EN },
+  ENDMARKER,
 };
 
 
@@ -497,6 +498,9 @@ static const uint8_t ov2640_size_change_preamble_regs[][2] = {
   { VHYX, VHYX_HSIZE_SET(W_UXGA) | VHYX_VSIZE_SET(H_UXGA) |
     VHYX_XOFF_SET(0) | VHYX_YOFF_SET(0)},
   { TEST, TEST_HSIZE_SET(W_UXGA) },
+  ENDMARKER,
+
+
 };
 
 #define PER_SIZE_REG_SEQ(x, y, v_div, h_div, pclk_div)  \
@@ -515,6 +519,7 @@ static const uint8_t ov2640_qcif_regs[][2] = {
 
 static const uint8_t ov2640_qvga_regs[][2] = {
   PER_SIZE_REG_SEQ(W_QVGA, H_QVGA, 2, 2, 4),
+  ENDMARKER,
 };
 
 static const uint8_t ov2640_cif_regs[][2] = {
@@ -561,6 +566,8 @@ static const uint8_t ov2640_uxga_regs[][2] = {
 static const uint8_t ov2640_format_change_preamble_regs[][2] = {
   { BANK_SEL, BANK_SEL_DSP },
   { R_BYPASS, R_BYPASS_USE_DSP },
+  ENDMARKER,
+
 };
 
 static const uint8_t ov2640_yuyv_regs[][2] = {
@@ -571,6 +578,7 @@ static const uint8_t ov2640_yuyv_regs[][2] = {
   { 0xe1, 0x67 },
   { RESET,  0x00 },
   { R_BYPASS, R_BYPASS_USE_DSP },
+  ENDMARKER,
 };
 
 static const uint8_t ov2640_uyvy_regs[][2] = {

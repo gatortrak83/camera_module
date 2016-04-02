@@ -52,57 +52,72 @@ int32_t OV2640_Init(uint8_t usci_num) {
 
 void OV2640_SetCameraRegisters(uint8_t usci_num) {
 	uint32_t i = 0;
-	const uint8_t (*regs)[2];
+	const uint8_t (*regs1)[2];
+	const uint8_t (*regs2)[2];
+	const uint8_t (*regs3)[2];
+	const uint8_t (*regs4)[2];
+	const uint8_t (*regs5)[2];
 
 	/* Reset all the registers */
 	i = 0;
-	regs = reset_seq;
-	while (regs[i][0]) {
-		SCCB_Write(usci_num, regs[i][0], regs[i][1], 2);
+	regs1 = reset_seq;
+	while (regs1[i][0] != 0xFF && regs1[i][1] != 0xFF) {
+		SCCB_Write(usci_num, regs1[i][0], regs1[i][1], 2);
 		__delay_cycles(sccb_delay);
 		i++;
 	}
 
 	/* Write initial registers */
 	i = 0;
-	regs = ov2640_init_regs;
-	while (regs[i][0]) {
-		SCCB_Write(usci_num, regs[i][0], regs[i][1], 2);
+	regs2 = ov2640_init_regs;
+	while (regs2[i][0] != 0xFF && regs2[i][1] != 0xFF) {
+		SCCB_Write(usci_num, regs2[i][0], regs2[i][1], 2);
 		__delay_cycles(sccb_delay);
 		i++;
 	}
 
 	/* Change image size */
 	i = 0;
-	regs = ov2640_size_change_preamble_regs;
-	while (regs[i][0]) {
-		SCCB_Write(usci_num, regs[i][0], regs[i][1], 2);
+	regs3 = ov2640_size_change_preamble_regs;
+	while (regs3[i][0] != 0xFF && regs3[i][1] != 0xFF) {
+		SCCB_Write(usci_num, regs3[i][0], regs3[i][1], 2);
 		__delay_cycles(sccb_delay);
 		i++;
 	}
 
 	i = 0;
-	regs = ov2640_qvga_regs;
-	while (regs[i][0]) {
-		SCCB_Write(usci_num, regs[i][0], regs[i][1], 2);
+	regs4 = ov2640_qvga_regs;
+	while (regs4[i][0] != 0xFF && regs4[i][1] != 0xFF) {
+		SCCB_Write(usci_num, regs4[i][0], regs4[i][1], 2);
 		__delay_cycles(sccb_delay);
 		i++;
 	}
 
 	/* change image format */
 	i = 0;
-	regs = ov2640_format_change_preamble_regs;
-	while (regs[i][0]) {
-		SCCB_Write(usci_num, regs[i][0], regs[i][1], 2);
+	regs5 = ov2640_format_change_preamble_regs;
+	while (regs5[i][0] != 0xFF && regs5[i][1] != 0xFF) {
+		SCCB_Write(usci_num, regs5[i][0], regs5[i][1], 2);
 		__delay_cycles(sccb_delay);
 		i++;
 	}
 
+
+	/*
 	i = 0;
+	regs = ov2640_rgb565_le_regs;
 	while (regs[i][0]) {
 		SCCB_Write(usci_num, regs[i][0], regs[i][1], 2);
 		__delay_cycles(sccb_delay);
 		i++;
-		;
+
 	}
+*/
+
+	SCCB_Write(usci_num, IMAGE_MODE, IMAGE_MODE_LBYTE_FIRST | IMAGE_MODE_RGB565, 2);
+	SCCB_Write(usci_num, 0xd7, 0x03, 2);
+	SCCB_Write(usci_num,  RESET,  0x00 , 2);
+	SCCB_Write(usci_num, R_BYPASS, R_BYPASS_USE_DSP, 2);
+	SCCB_Write(usci_num, 0xFF, 0xFF, 2);
+
 }

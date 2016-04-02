@@ -63,6 +63,7 @@ void main(void) {
     OV2640_Init(1);
 
 
+
     while(1){
 
     	GPIO_toggleOutputOnPin(GPIO_PORT_P7, GPIO_PIN4);

@@ -10,7 +10,7 @@
 
 #include "driverlib.h"
 
-#define sccb_delay 100000
+#define sccb_delay 10000
 
 void sccb_init_master(uint8_t usci_num);
 void SCCB_Write(uint8_t usci_num, unsigned char addr, unsigned char val,
