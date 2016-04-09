@@ -40,7 +40,6 @@ void clock_init(void){
 	//Comment out if not using VCO
 	//Start
 
-/*
 	GPIO_setAsOutputPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
@@ -49,14 +48,14 @@ void clock_init(void){
 		GPIO_PORT_P3,
 		GPIO_PIN5);
 
-*/
+
 	//END
 
 
 	//Comment out clock peripheral output setup
 	//for VCO usage
 	//Start
-
+/*
     //Output MCLK
     GPIO_setAsPeripheralModuleFunctionOutputPin(
         GPIO_PORT_P7,
@@ -73,7 +72,7 @@ void clock_init(void){
         GPIO_PIN2);
 
     //END
-
+*/
 
     //Port select XT1
     GPIO_setAsPeripheralModuleFunctionInputPin(
@@ -109,13 +108,6 @@ void clock_init(void){
         UCS_MCLK_FLLREF_RATIO
         );
 
-
-    //Select DCO as MCLK source
-    UCS_initClockSignal(
-    	UCS_MCLK,
-		UCS_DCOCLK_SELECT,
-		UCS_CLOCK_DIVIDER_1
-		);
 
     //Select DCO as ACLK source
     UCS_initClockSignal(
@@ -172,11 +164,34 @@ void gpio_init(void){
 	GPIO_setAsOutputPin(GPIO_PORT_P4, GPIO_PIN6);
 	GPIO_setOutputLowOnPin(GPIO_PORT_P4, GPIO_PIN6);
 
+
+	//1.5 camera 3 set to Zedboard
+	GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN5);
+	GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN5);
+
+	//1.6 camera 1 set to Zedboard
+	GPIO_setAsOutputPin(GPIO_PORT_P1, GPIO_PIN6);
+	GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN6);
+
+	//P2.6 reset for camera 1
+	GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN6);
+	GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN6);
+
+	//P2.6 reset for camera 1
+	GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN4);
+	GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN4);
+
+
 	//Inputs
 
 	//P7.5 -> Button SW3
 	GPIO_setAsInputPin(GPIO_PORT_P7, GPIO_PIN5);
 
+	//P1.3 Camera 3 init request line from zedboard
+	GPIO_setAsInputPin(GPIO_PORT_P1, GPIO_PIN3);
+
+	//P1.4 Camera 1 init request line from zedboard
+	GPIO_setAsInputPin(GPIO_PORT_P4, GPIO_PIN4);
 }
 
 
