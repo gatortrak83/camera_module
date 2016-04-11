@@ -87,7 +87,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=THRQNHMV
+DocumentUniqueId=PICTUYRY
 
 [Document4]
 DocumentPath=[02] - BLOCK DIAGRAM.SchDoc
@@ -104,7 +104,7 @@ ClassGenCCAutoRoomEnabled=0
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=WGFQYJGD
+DocumentUniqueId=QNVTHBNT
 
 [Document5]
 DocumentPath=[03] - OV2640.SchDoc
@@ -158,17 +158,17 @@ GenerateClassCluster=0
 DocumentUniqueId=SGKJMJGS
 
 [Document8]
-DocumentPath=[XX] - DOC REVISION HISTORY.SchDoc
+DocumentPath=[06] - DOC REVISION HISTORY.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=3
+AnnotateOrder=-1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=0
+ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
@@ -322,16 +322,20 @@ DocumentPath=Project Outputs for camera_module_V1R1\Design Rule Check - camera_m
 DItemRevisionGUID=
 
 [Parameter1]
-Name=Company
-Value=(c) 2013 FEDEVEL www.fedevel.com
+Name=
+Value=
 
 [Parameter2]
-Name=Project
-Value=Altium Template
+Name=VersionRevision
+Value=V1R1
 
 [Parameter3]
-Name=VersionRevision
-Value=V1I1
+Name=Project
+Value=Stereo Vision Camera Module
+
+[Parameter4]
+Name=Company
+Value=(c) 2013 FEDEVEL www.fedevel.com
 
 [Configuration1]
 Name=Default Configuration
