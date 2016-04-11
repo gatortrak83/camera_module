@@ -24,37 +24,33 @@ uint8_t check = 0;
  * Inputs: none
  * Outputs: none
  * Description:
- * 		Outputs clocks to gpio pins
+ * 		Enables on board VCOs
  * 		Sets gpio pins for XT1
  * 		Sets XT1 to Ref for FLL
- * 		Sets MCLK to 24 Mhz
+ * 		Sets MCLK to 12 Mhz
  * 		Change VCORE
  * 		Sets MCLK to SMCLK and ACLK
+ *
  *********************************************/
 
 
 void clock_init(void){
 
-	uint8_t returnValue = 0;
-
 	//Comment out if not using VCO
-	//Start
+	//Comment out Start
 
 	GPIO_setAsOutputPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
 
-	GPIO_setOutputLowOnPin(
+	GPIO_setOutputHighOnPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
+	//Comment out END
 
 
-	//END
-
-
-	//Comment out clock peripheral output setup
-	//for VCO usage
-	//Start
+	//Comment out if using VCO
+	//Comment outStart
 /*
     //Output MCLK
     GPIO_setAsPeripheralModuleFunctionOutputPin(
@@ -71,7 +67,7 @@ void clock_init(void){
         GPIO_PORT_P2,
         GPIO_PIN2);
 
-    //END
+    //Comment out END
 */
 
     //Port select XT1
@@ -124,7 +120,6 @@ void clock_init(void){
         );
 
 
-
     // Enable global oscillator fault flag
     SFR_clearInterrupt(SFR_OSCILLATOR_FAULT_INTERRUPT);
     SFR_enableInterrupt(SFR_OSCILLATOR_FAULT_INTERRUPT);
@@ -133,8 +128,6 @@ void clock_init(void){
     __bis_SR_register(GIE);
 
 }
-
-
 
 
 /**********************************************
@@ -179,7 +172,7 @@ void gpio_init(void){
 
 	//P2.6 reset for camera 1
 	GPIO_setAsOutputPin(GPIO_PORT_P2, GPIO_PIN4);
-	GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN4);
+	GPIO_setOutputLowOnPin(GPIO_PORT_P2,  GPIO_PIN4);
 
 
 	//Inputs

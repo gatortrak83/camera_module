@@ -51,8 +51,6 @@ int32_t OV2640_Init(uint8_t usci_num) {
 }
 
 void OV2640_SetCameraRegisters(uint8_t usci_num) {
-	uint32_t i = 0;
-	const uint8_t (*regs)[2];
 
 	SCCB_Write(usci_num, BANK_SEL, BANK_SEL_SENS, 2);
 	__delay_cycles(sccb_delay);
@@ -420,6 +418,9 @@ void OV2640_SetCameraRegisters(uint8_t usci_num) {
 	__delay_cycles(sccb_delay);
 	SCCB_Write(usci_num, TEST, TEST_HSIZE_SET(W_UXGA) , 2);
 	__delay_cycles(sccb_delay);
+
+	//320x240
+/*
 	SCCB_Write(usci_num, CTRLI, CTRLI_LP_DP | CTRLI_V_DIV_SET(2) |  CTRLI_H_DIV_SET(2), 2);
 	__delay_cycles(sccb_delay);
 	SCCB_Write(usci_num, ZMOW, ZMOW_OUTW_SET(W_QVGA) , 2);
@@ -430,6 +431,39 @@ void OV2640_SetCameraRegisters(uint8_t usci_num) {
 	__delay_cycles(sccb_delay);
 	SCCB_Write(usci_num, R_DVP_SP, 4 , 2);
 	__delay_cycles(sccb_delay);
+*/
+	//VGA
+/*	SCCB_Write(usci_num, CTRLI, CTRLI_LP_DP | CTRLI_V_DIV_SET(0) |  CTRLI_H_DIV_SET(0), 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, ZMOW, ZMOW_OUTW_SET(W_VGA) , 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, ZMOH, ZMOH_OUTH_SET(H_VGA) , 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, ZMHH, ZMHH_OUTW_SET(W_VGA) | ZMHH_OUTH_SET(H_VGA) , 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, R_DVP_SP, 2 , 2);
+	__delay_cycles(sccb_delay);
+*/
+
+
+	//1600x1200
+	SCCB_Write(usci_num, CTRLI, CTRLI_LP_DP | CTRLI_V_DIV_SET(0) |  CTRLI_H_DIV_SET(0), 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, ZMOW, ZMOW_OUTW_SET(W_UXGA) , 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, ZMOH, ZMOH_OUTH_SET(H_UXGA) , 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, ZMHH, ZMHH_OUTW_SET(W_UXGA) | ZMHH_OUTH_SET(H_UXGA) , 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, R_DVP_SP, 0 , 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, CTRLI, 0x00, 2);
+	__delay_cycles(sccb_delay);
+	SCCB_Write(usci_num, R_DVP_SP, 0x00 | R_DVP_SP_AUTO_MODE, 2);
+	__delay_cycles(sccb_delay);
+
+
+
 	SCCB_Write(usci_num, RESET, 0x00, 2);
 	__delay_cycles(sccb_delay);
 	SCCB_Write(usci_num, BANK_SEL, BANK_SEL_DSP , 2);

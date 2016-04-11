@@ -135,7 +135,6 @@ uint8_t USCI_B_I2C_slaveGetData(uint16_t baseAddress)
 
 uint8_t USCI_B_I2C_isBusBusy(uint16_t baseAddress)
 {
-    //Return the bus busy status.
     return (HWREG8(baseAddress + OFS_UCBxSTAT) & UCBBUSY);
 }
 

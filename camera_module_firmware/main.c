@@ -44,8 +44,6 @@ void main(void) {
 //	uart_init();
 
 
-
-
 /*************************************
  * I2C/SCCB
  *************************************/
@@ -57,39 +55,19 @@ void main(void) {
  * OV2640
  *************************************/
 
-
-    //Wait for signal then init camera 1
-    while(GPIO_getInputPinValue(GPIO_PORT_P1, GPIO_PIN4) == 0){
-        __delay_cycles(1000000);
-    	GPIO_toggleOutputOnPin(GPIO_PORT_P5, GPIO_PIN6);
-    }
-
-    //Toggle camera 1 reset
-    GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN6);
-    __delay_cycles(1000000);
-    GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN6);
-    __delay_cycles(1000000);
-    OV2640_Init(0);
-
-    //Signal camera 1 init complete
-    GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN6);
-    __delay_cycles(24000000);
-    GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN6);
-
-    //Display camera 1 init on led to zedboard
-    GPIO_setOutputLowOnPin(GPIO_PORT_P5, GPIO_PIN6);
-
     //Wait for signal then init camera 3
     while(GPIO_getInputPinValue(GPIO_PORT_P1, GPIO_PIN3) == 0){
         __delay_cycles(1000000);
     	GPIO_toggleOutputOnPin(GPIO_PORT_P4, GPIO_PIN6);
     }
 
-
+    //Reset Camera
     GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN4);
     __delay_cycles(1000000);
     GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN4);
     __delay_cycles(1000000);
+
+    //Initialize Camera 3
     OV2640_Init(1);
 
 
@@ -98,15 +76,12 @@ void main(void) {
     __delay_cycles(24000000);
     GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN5);
 
-    //Display camera 3 init on led to zedboard
     GPIO_setOutputLowOnPin(GPIO_PORT_P4, GPIO_PIN6);
 
+    //Wait for signal to initialize Camera
     while(1){
-
-
     	GPIO_setOutputHighOnPin(GPIO_PORT_P5, GPIO_PIN6);
 		__delay_cycles(6000);
-
     }
 }
 
