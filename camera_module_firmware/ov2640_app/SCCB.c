@@ -20,7 +20,7 @@ void sccb_init_master(uint8_t usci_num){
 
 	uint16_t i2c_base;
 
-
+    ///I2C 1
 	if(usci_num == 0){
 		i2c_base = USCI_B0_BASE;
 
@@ -32,6 +32,7 @@ void sccb_init_master(uint8_t usci_num){
         	);
 	}
 
+	//I2C 2
 	else if(usci_num == 1){
 		i2c_base = USCI_B1_BASE;
 
@@ -74,10 +75,11 @@ void SCCB_Write(uint8_t usci_num, unsigned char addr, unsigned char val, uint8_t
 		i2c_base = USCI_B1_BASE;
 	}
 
-
+	//Set transmit mode and enable i2c
 	USCI_B_I2C_setMode(i2c_base, USCI_B_I2C_TRANSMIT_MODE);
 	USCI_B_I2C_enable(i2c_base);
 
+	//clear and set interrupts
 	USCI_B_I2C_clearInterrupt(i2c_base, USCI_B_I2C_TRANSMIT_INTERRUPT);
 	USCI_B_I2C_enableInterrupt(i2c_base, USCI_B_I2C_TRANSMIT_INTERRUPT);
 

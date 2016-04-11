@@ -32,19 +32,15 @@ void main(void) {
  *************************************/
     gpio_init();
 
-
 /*************************************
  * Clocks
  *************************************/
     clock_init();
 
 /*************************************
- * UART
+ * UART (not used)
  *************************************/
 //	uart_init();
-
-
-
 
 /*************************************
  * I2C/SCCB
@@ -56,8 +52,9 @@ void main(void) {
 /*************************************
  * OV2640
  *************************************/
-
-
+//comment out for 1 cam
+//start
+/*
     //Wait for signal then init camera 1
     while(GPIO_getInputPinValue(GPIO_PORT_P1, GPIO_PIN4) == 0){
         __delay_cycles(1000000);
@@ -69,15 +66,19 @@ void main(void) {
     __delay_cycles(1000000);
     GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN6);
     __delay_cycles(1000000);
+
+    //Initialize camera 1
     OV2640_Init(0);
 
-    //Signal camera 1 init complete
+    //Signal camera 1 init complete to Zedboard
     GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN6);
     __delay_cycles(24000000);
     GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN6);
 
-    //Display camera 1 init on led to zedboard
+    //Turn off camera 1 led
     GPIO_setOutputLowOnPin(GPIO_PORT_P5, GPIO_PIN6);
+*/
+//end
 
     //Wait for signal then init camera 3
     while(GPIO_getInputPinValue(GPIO_PORT_P1, GPIO_PIN3) == 0){
@@ -85,26 +86,28 @@ void main(void) {
     	GPIO_toggleOutputOnPin(GPIO_PORT_P4, GPIO_PIN6);
     }
 
-
+    //Toggle camera 3 reset
     GPIO_setOutputLowOnPin(GPIO_PORT_P2, GPIO_PIN4);
     __delay_cycles(1000000);
     GPIO_setOutputHighOnPin(GPIO_PORT_P2, GPIO_PIN4);
     __delay_cycles(1000000);
-    OV2640_Init(1);
 
+    //Initialize camera 3
+    OV2640_Init(1);
 
     //Signal camera 3 init complete to zedboard
     GPIO_setOutputHighOnPin(GPIO_PORT_P1, GPIO_PIN5);
     __delay_cycles(24000000);
     GPIO_setOutputLowOnPin(GPIO_PORT_P1, GPIO_PIN5);
 
-    //Display camera 3 init on led to zedboard
+    //Turn off camera 3 led
     GPIO_setOutputLowOnPin(GPIO_PORT_P4, GPIO_PIN6);
+
+    //Turn on done led
+	GPIO_setOutputHighOnPin(GPIO_PORT_P5, GPIO_PIN6);
 
     while(1){
 
-
-    	GPIO_setOutputHighOnPin(GPIO_PORT_P5, GPIO_PIN6);
 		__delay_cycles(6000);
 
     }

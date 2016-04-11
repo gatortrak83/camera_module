@@ -51,8 +51,6 @@ int32_t OV2640_Init(uint8_t usci_num) {
 }
 
 void OV2640_SetCameraRegisters(uint8_t usci_num) {
-	uint32_t i = 0;
-	const uint8_t (*regs)[2];
 
 	SCCB_Write(usci_num, BANK_SEL, BANK_SEL_SENS, 2);
 	__delay_cycles(sccb_delay);

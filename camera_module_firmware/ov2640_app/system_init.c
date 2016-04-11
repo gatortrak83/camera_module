@@ -44,7 +44,7 @@ void clock_init(void){
 		GPIO_PORT_P3,
 		GPIO_PIN5);
 
-	GPIO_setOutputLowOnPin(
+	GPIO_setOutputHighOnPin(
 		GPIO_PORT_P3,
 		GPIO_PIN5);
 
