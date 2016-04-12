@@ -443,4 +443,56 @@ void OV2640_SetCameraRegisters(uint8_t usci_num) {
 	SCCB_Write(usci_num, R_BYPASS, R_BYPASS_USE_DSP, 2);
 	__delay_cycles(sccb_delay);
 
+	/*********************************************
+	 * Light Modes
+	 ********************************************/
+
+		//Auto
+		SCCB_Write(usci_num, 0xff, 0x00, 2);
+		SCCB_Write(usci_num, 0xc7, 0x00, 2);
+
+
+	/*
+		//Office
+		SCCB_Write(usci_num, 0xff, 0x00, 2);
+		SCCB_Write(usci_num, 0xc7, 0x40, 2);
+		SCCB_Write(usci_num, 0xcc, 0x52, 2);
+		SCCB_Write(usci_num, 0xcd, 0x41, 2);
+		SCCB_Write(usci_num, 0xce, 0x66, 2);
+
+
+		//Home
+		SCCB_Write(usci_num, 0xff, 0x00, 2);
+		SCCB_Write(usci_num, 0xc7, 0x40, 2);
+		SCCB_Write(usci_num, 0xcc, 0x42, 2);
+		SCCB_Write(usci_num, 0xcd, 0x3f, 2);
+		SCCB_Write(usci_num, 0xce, 0x71, 2);
+
+	*/
+
+
+	/*********************************************
+	 * Color Modes
+	 ********************************************/
+
+	/*
+		//Black and White
+		SCCB_Write(usci_num, 0xff, 0x00, 2);
+		SCCB_Write(usci_num, 0x7c, 0x00, 2);
+		SCCB_Write(usci_num, 0x7d, 0x18, 2);
+		SCCB_Write(usci_num, 0x7c, 0x05, 2);
+		SCCB_Write(usci_num, 0x7d, 0x80, 2);
+		SCCB_Write(usci_num, 0x7d, 0x80, 2);
+
+		//Antique
+		SCCB_Write(usci_num, 0xff, 0x00, 2);
+		SCCB_Write(usci_num, 0x7c, 0x00, 2);
+		SCCB_Write(usci_num, 0x7d, 0x18, 2);
+		SCCB_Write(usci_num, 0x7c, 0x05, 2);
+		SCCB_Write(usci_num, 0x7d, 0x40, 2);
+		SCCB_Write(usci_num, 0x7d, 0xa6, 2);
+	*/
+
+
+
 }
