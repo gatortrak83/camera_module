@@ -322,20 +322,16 @@ DocumentPath=Project Outputs for camera_module_V1R1\Design Rule Check - camera_m
 DItemRevisionGUID=
 
 [Parameter1]
-Name=
-Value=
+Name=Company
+Value=(c) 2013 FEDEVEL www.fedevel.com
 
 [Parameter2]
-Name=VersionRevision
-Value=V1R1
-
-[Parameter3]
 Name=Project
 Value=Stereo Vision Camera Module
 
-[Parameter4]
-Name=Company
-Value=(c) 2013 FEDEVEL www.fedevel.com
+[Parameter3]
+Name=VersionRevision
+Value=V1R1
 
 [Configuration1]
 Name=Default Configuration
