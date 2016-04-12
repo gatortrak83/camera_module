@@ -36,6 +36,8 @@ uint8_t check = 0;
 
 void clock_init(void){
 
+	uint8_t returnValue = 0x00;
+
 	//Comment out if not using VCO
 	//Comment out Start
 
