@@ -519,7 +519,9 @@ void OV2640_SetCameraRegisters(uint8_t usci_num) {
 	SCCB_Write(usci_num, 0x7c, 0x05, 2);
 	SCCB_Write(usci_num, 0x7d, 0x80, 2);
 	SCCB_Write(usci_num, 0x7d, 0x80, 2);
+*/
 
+/*
 	//Antique
 	SCCB_Write(usci_num, 0xff, 0x00, 2);
 	SCCB_Write(usci_num, 0x7c, 0x00, 2);
@@ -527,6 +529,6 @@ void OV2640_SetCameraRegisters(uint8_t usci_num) {
 	SCCB_Write(usci_num, 0x7c, 0x05, 2);
 	SCCB_Write(usci_num, 0x7d, 0x40, 2);
 	SCCB_Write(usci_num, 0x7d, 0xa6, 2);
-*/
 
+*/
 }
